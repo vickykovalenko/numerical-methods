@@ -1,11 +1,3 @@
-//
-//  main.cpp
-//  сь
-//
-//  Created by Андрій on 2/5/21.
-//  Copyright © 2021 Victoria. All rights reserved.
-//
-
 #include <iostream>
 #include <cmath>
 using namespace std;
