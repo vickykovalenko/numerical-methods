@@ -5,8 +5,6 @@ double func(double x)
 {
   //return pow(x,5)+ pow(x,2) + 3;
     return x*x*x - x*x + 2;
-
-   
 }
 
 int main() {
@@ -19,7 +17,7 @@ int main() {
     //double x;
     if(func(a)==0)
     {
-        cout<<"root:"<<a<<endl;
+        cout<<"root: "<<a<<endl;
         return 0;
     }
     if(func(b)==0)
