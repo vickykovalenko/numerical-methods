@@ -1,0 +1,13 @@
+set border linewidth 1.5
+set style line 1 lc rgb '#0060ad' pt 7 ps 1.5 lt 1 lw 2 # --- blue 
+unset key
+set style line 11 lc rgb '#808080' lt 1
+set border 3 back ls 1
+set border 3 back ls 1
+set border 3 back ls 1
+set tics nomirror out scale 0.75
+set style line 12 lc rgb'#808080' lt 0 lw 1
+set grid back ls 12
+set xrange [-10:10]
+set yrange [-10:10]
+plot 'D:\operations.txt' w p ls 1, 15.5527+-9.82089*x**1+1.9343*x**2+-0.139187*x**3+0.0027869*x**4
