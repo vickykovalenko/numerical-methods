@@ -133,13 +133,16 @@ vector<double> standardPolynomial(const vector<double>& coef2, const vector<doub
 
 int main()
 {
-    int n = 4;
+    int n = 0;
+    cout << "Enter number of points: ";
+    cin >> n;
     vec x(n);
     vec y(n);
     for (int i = 0; i < x.size(); ++i)
     {
         x[i] = i;
-        y[i] = x[i]*x[i]*x[i];
+        //y[i] = x[i]*x[i]*x[i];
+        y[i] = (3.0*cos(2.0*x[i]));
     }
 
     std::ofstream out("points_2.txt");
@@ -168,9 +171,9 @@ int main()
     }
     for (int i = 0; i < allcoef.size(); i++)
     {
-        for (int j = 0; j < allcoef[i].size(); j++)
+        for (int j = 0; j < 4; j++)
         {
-            if (j == allcoef[i].size() - 1)
+            if (j == 3)
             {
                 cout << "(" << allcoef[i][j] << ")x**" << j << endl;
             }
@@ -187,17 +190,17 @@ int main()
         out2 << "plot 'points_2.txt' w p ls 1 title 'data', x**3 title 'main function',";
         for (int j = 0; j < allcoef.size(); j++)
         { 
-            for (int i = 0; i < allcoef[j].size(); i++)
+            for (int i = 0; i < 4; i++)
             {
-                if (i == allcoef[j].size() - 1 && i != 0)
+                if (i == 3 && i != 0)
                 {
                     out2 << allcoef[j][i] << "*x**" << i;
                 }
-                else if (i == 0 && i != allcoef[j].size() - 1)
+                else if (i == 0 && i != 3)
                 {
                     out2 << allcoef[j][i] << "+";
                 }
-                else if (i == 0 && i == allcoef[j].size() - 1) {
+                else if (i == 0 && i == 3) {
                     out2 << allcoef[j][i];
                 }
                 else {
