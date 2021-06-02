@@ -22,9 +22,9 @@ __Solving a system of linear equations__
 
 __PageRank algorithm__
 
-### Input: adjacency matrix of directed graph (sum of values in each column is equal to 1).
+Input: adjacency matrix of directed graph (sum of values in each column is equal to 1).
 
-### Output: vector of rank vertices. 
+Output: vector of rank vertices. 
 
 <h2>4. Lab 4<h2>
 
