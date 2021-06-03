@@ -316,7 +316,7 @@ int main()
     cout << "Enter b:\n";
     cin >> b;
     int num_points;
-    cout << "Enter number of points:\n";
+    cout << "Enter the number of points:\n";
     cin >> num_points;
     vector<double> points;
     double interval = (b - a) / num_points;
