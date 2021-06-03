@@ -134,7 +134,7 @@ vector<double> standardPolynomial(const vector<double>& coef2, const vector<doub
 int main()
 {
     int n = 0;
-    cout << "Enter number of points: ";
+    cout << "Enter the number of points: ";
     cin >> n;
     vec x(n);
     vec y(n);
